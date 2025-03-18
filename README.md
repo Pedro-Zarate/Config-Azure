@@ -64,3 +64,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/bJnpzbN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p> Login to dc-1 vm we will be disabling the firewall  </p>
+
+<p>
+<img src="https://i.imgur.com/16Kyh2B.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<p> go to azure and under client-1 vm you will have to redirect the dns settings to the dc-1 vm private ip adress under network settings - dns settings change to custom and input dc-1s private ip adress client-1 vm will then reset under new settings once saved </p>
