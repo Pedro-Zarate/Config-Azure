@@ -182,9 +182,37 @@ Run the script and observe the accounts being created
 
 -Step 4 Group Policy and Manging Accounts
 
+<p>We will need to configure the account lockout policy in active directory on Dc-1 first, open run and type gpmc.msc, press enter.
+This will open the policy management console.
+</p>
+
+ <img src="https://i.imgur.com/i0mNlTW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+<p> Create or edit a group Policy Object
+
+1. navigate to the group policy objects section.
+2. right-click Group Policy Object and select new to create a new GPO, or right click an existing GPO and edit to modify it.
+   Give the new GPO a descriptive name (Account Lockout Policy) we will be editing the current policy.
+</p>
+ <img src="https://i.imgur.com/arYIqn8.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+<p> Navigate to the account lockout policy settings 
+  1. in the group policy management editor, expand the following 
+    Computer configuration > Policies > Windows Settings > Security Settings > Account Policies 
+</p>
+ <img src="https://i.imgur.com/xQlU1Lz.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
+<p> Configure Account Lockout Policy Settings 
+  1. Change the Account lookout duration
+  2. update the group policy ( wait for it to automatically update or on the client-1 machine you can run gpupdate/force on Command Prompt to manually update.
+</p>
+
+ <img src="https://i.imgur.com/pAhslpB.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
 
 <p> Dealing with account lockouts </p>
- <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
 <p> Enabling and disabilling accounts </p>
  <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
