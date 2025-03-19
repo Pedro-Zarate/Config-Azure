@@ -151,3 +151,49 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/6PwizCY.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/eFzG8LY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
+<p> Setup Remote Desktop for non-administrative users on Client-1 by loggin back into client-1 and using the admin user name  </p>
+
+<img src="https://i.imgur.com/Q8EWr6b.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
+<p> Open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+  </p>
+
+<img src="https://i.imgur.com/EBpKrd2.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
+
+<p> Create a bunch of additional users and attempt to log into client-1 with one of the users </p>
+
+<img src="  " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
+
+<img src="  " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
