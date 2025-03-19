@@ -51,7 +51,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  once both vm have been created, Our network setting will need to be adjusted on the Dc-1 vm. Click on the virtual matchines tab in azure, and next click on Dc-1. 
+  once both vm have been created, Our network setting will need to be adjusted on the Dc-1 vm. Click on the virtual machine tab in azure, and next click on Dc-1. 
 
 </p>
 <p>
@@ -86,4 +86,67 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/qK2GdIZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/ZBBcwqJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p> We have now successfully Set up our domin controller, setup our client vm, and configuered our ip adress settings for our active directory</p>
+<p> We have now successfully Set up our domin controller, setup our client-1 virtual machines dns to our Dc-1'private ip adress. </p>
+
+
+- Step 2 Depliying Active Directory 
+
+<p> Setting up Active Directory, log into DC-1 and install AD through server manager -Add roles and features </p>
+
+<img src="https://i.imgur.com/xXILZ3E.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> select Active directory domain services then continue to click on next </p>
+
+<img src="https://i.imgur.com/YoRfllg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<p> Active Directory is now installed </p>
+<img src="https://i.imgur.com/bvBVG6P.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<p> login to Dc-1 to Promote it as the main domain controller by setting up a new forest (mydomain.com)  </p>
+
+<img src="https://i.imgur.com/Y8QY6Ix.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/IuY42Jm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/MIOUpgz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/zZDMkx5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Shff5i2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> now log into dc-1 with your domain username </p>
+<img src="https://i.imgur.com/OPEgPlb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<p> Open Active Directory Users and Computers and create a new organizational unit </p>
+<img src="https://i.imgur.com/cB5Cag6.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> Name it _EMPLOYEES </p>
+
+<img src="https://i.imgur.com/6YOTXs6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> Create a second folder and name it _ADMINS </p>
+
+<img src="https://i.imgur.com/ch2ejQ9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> Inside Admins folder create a new user </p>
+<img src="https://i.imgur.com/KIs9EXN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ncQcZmv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> once the user is created open the users properties and set the users member of group to Domain Admins </p>
+
+<img src="https://i.imgur.com/XTzUo8i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> now we can log in as an admin under this user </p>
+
+
+<img src="https://i.imgur.com/6rWD7y8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p> Join Client-1 to the domain </p>
+<img src="https://i.imgur.com/d7JYh7u.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uQhz9sa.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> login to Dc-1 (Domain Controller) to verify Client-1 shows up in Active Directory users and computers </p>
+<img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 4
+<p> create a new Organizational unit and name it _CLIENTS then drag over the Client-group over to the new _CLIENTS folder to keep it organzied  </p>
+
+<img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 5
+<img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 5
+
