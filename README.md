@@ -144,9 +144,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/d7JYh7u.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/uQhz9sa.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p> login to Dc-1 (Domain Controller) to verify Client-1 shows up in Active Directory users and computers </p>
-<img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 4
+<img src="https://i.imgur.com/gqLFHS5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
 <p> create a new Organizational unit and name it _CLIENTS then drag over the Client-group over to the new _CLIENTS folder to keep it organzied  </p>
 
-<img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 5
-<img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 5
+<img src="https://i.imgur.com/6PwizCY.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/eFzG8LY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
