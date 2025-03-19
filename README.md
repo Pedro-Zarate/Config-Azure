@@ -165,22 +165,32 @@ You can now log into Client-1 as a normal, non-administrative user now
 <img src="https://i.imgur.com/EBpKrd2.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
 <!--- come back and add the script repo to the ancore tag below  -->
+-Step 3 Creating Users with Powershell
+
 
 <p> Create a bunch of additional users and attempt to log into client-1 with one of the users </p>
 <p> Login to DC-1 as jane_admin
 Open PowerShell_ise as an administrator
-Create a new File and paste the <a href="www.youtube.com "> script </a>  into it
+Create a new File, save it  and paste the <a href="www.youtube.com "> script </a>  into it
 Run the script and observe the accounts being created
  </p>
-<img src="  " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
 <p> When finished, open ADUC and observe the accounts in the appropriate OU　(_EMPLOYEES)
  </p>
 
+ <img src="https://i.imgur.com/Bhrjtqt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
-<img src=" https://i.imgur.com/Bhrjtqt.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+-Step 4 Group Policy and Manging Accounts
 
 
+<p> Dealing with account lockouts </p>
+ <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
+<p> Enabling and disabilling accounts </p>
+ <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+<p> Observing Logs </p>
+ <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
 
 
