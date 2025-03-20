@@ -231,11 +231,12 @@ Open Active directory and looking for the user once the user is found click on t
 
  <p> the account has been successfully unlocked </p>
 
-<p> Enabling and disabilling accounts </p>
- 
+<p> Enabling and disabilling accounts open Active Directory in the domain controller DC-1vm right click on the _Employees folder to search for the user account you want to disable or rest password. </p>
 
-<p> Observing Logs </p>
- <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ <img src="https://i.imgur.com/GUiAnPl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ <img src="https://i.imgur.com/jLDVTNn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
 
 
 
