@@ -214,8 +214,25 @@ This will open the policy management console.
 
 <p> Dealing with account lockouts </p>
 
+<p> Now we can try and lock out one of our users by attempting a wrong password 5 time locking us out.
+</p>
+
+ <img src="https://i.imgur.com/ZrAwVO5.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ <img src="https://i.imgur.com/9sYK1W8.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+<p> we will unlock this account by loging back into our domain controller account (Dc-1) 
+Open Active directory and looking for the user once the user is found click on the user to unlock account, you can also reset passwords from this window </p>
+
+ <img src="https://i.imgur.com/O1xNuYo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ <p> Now we log back in to our user and check if ww have unlocked the account </p>
+
+ <img src="https://i.imgur.com/lLt2buB.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+ <p> the account has been successfully unlocked </p>
+
 <p> Enabling and disabilling accounts </p>
- <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ 
 
 <p> Observing Logs </p>
  <img src=" " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
