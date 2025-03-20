@@ -171,7 +171,7 @@ You can now log into Client-1 as a normal, non-administrative user now
 <p> Create a bunch of additional users and attempt to log into client-1 with one of the users </p>
 <p> Login to DC-1 as jane_admin
 Open PowerShell_ise as an administrator
-Create a new File, save it  and paste the <a href="www.youtube.com "> script </a>  into it
+Create a new File, save it  and paste the <a href="https://github.com/Pedro-Zarate/Generate-names-AD-users/blob/main/Generate-Names-Create-Users.ps1"> script </a>  into it
 Run the script and observe the accounts being created
  </p>
 
