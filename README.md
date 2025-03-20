@@ -227,9 +227,10 @@ Open Active directory and looking for the user once the user is found click on t
 
  <p> Now we log back in to our user and check if ww have unlocked the account </p>
 
- <img src="https://i.imgur.com/lLt2buB.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
- <p> the account has been successfully unlocked </p>
+ <img src="https://i.imgur.com/lLt2buB.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+  <p> the account has been successfully unlocked </p>
+
 
 Enabling and Disabilling Accounts And Password Resets 
 
