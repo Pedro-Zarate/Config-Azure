@@ -47,13 +47,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 <p>
-  once both vm have been created, Our network setting will need to be adjusted on the Dc-1 vm. Click on the virtual machine tab in azure, and next click on Dc-1. 
+  Once both vm have been created, Our network setting will need to be adjusted on the Dc-1 vm. Click on the virtual machine tab in azure, and next click on Dc-1. 
 
 </p>
 <p>
 <img src="https://i.imgur.com/1eOtXP3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>click on network settings on the left tab, by clicking on the network interface/ ip configuration tab our ip settings will be available. </p>
+<p>Click on network settings on the left tab, by clicking on the network interface/ ip configuration tab our ip settings will be available. </p>
 <p>
 <img src="https://i.imgur.com/RkmLzuQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -73,7 +73,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 
-<p> go to azure and under client-1 vm you will have to redirect the dns settings to the dc-1 vm private ip adress under network settings - dns settings change to custom and input dc-1s private ip adress. dont forget to reset client-1 under vm tab in azure to reboot the system after. </p>
+<p> Go to azure and under client-1 vm you will have to redirect the dns settings to the dc-1 vm private ip adress under network settings - dns settings change to custom and input dc-1s private ip adress. dont forget to reset client-1 under vm tab in azure to reboot the system after. </p>
 
 <img src="https://i.imgur.com/16Kyh2B.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -87,11 +87,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Step 2 Depliying Active Directory 
 
-<p> Setting up Active Directory, log into DC-1 and install AD through server manager -Add roles and features </p>
+<p> Setting up active directory, log into DC-1 and install AD through server manager - add roles and features </p>
 
 <img src="https://i.imgur.com/xXILZ3E.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p> select Active directory domain services then continue to click on next </p>
+<p> Select active directory domain services then continue to click on next </p>
 
 <img src="https://i.imgur.com/YoRfllg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -100,7 +100,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/bvBVG6P.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-<p> login to Dc-1 to Promote it as the main domain controller by setting up a new forest (mydomain.com)  </p>
+<p> login to Dc-1 to promote it as the main domain controller by setting up a new forest (mydomain.com)  </p>
 
 <img src="https://i.imgur.com/Y8QY6Ix.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/IuY42Jm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -108,11 +108,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/zZDMkx5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/Shff5i2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p> now log into dc-1 with your domain username </p>
+<p> Now log into dc-1 with your domain username </p>
 <img src="https://i.imgur.com/OPEgPlb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 
-<p> Open Active Directory Users and Computers and create a new organizational unit </p>
+<p> Open active directory Users and computers and create a new organizational unit </p>
 <img src="https://i.imgur.com/cB5Cag6.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <p> Name it _EMPLOYEES </p>
@@ -123,15 +123,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <img src="https://i.imgur.com/ch2ejQ9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p> Inside Admins folder create a new user </p>
+<p> Inside admins folder create a new user </p>
 <img src="https://i.imgur.com/KIs9EXN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/ncQcZmv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p> once the user is created open the users properties and set the users member of group to Domain Admins </p>
+<p> Once the user is created open the users properties and set the users member of group to domain admins </p>
 
 <img src="https://i.imgur.com/XTzUo8i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p> now we can log in as an admin under this user </p>
+<p> Now we can log in as an admin under this user </p>
 
 
 <img src="https://i.imgur.com/6rWD7y8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -139,15 +139,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p> Join Client-1 to the domain </p>
 <img src="https://i.imgur.com/d7JYh7u.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/uQhz9sa.png " height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<p> login to Dc-1 (Domain Controller) to verify Client-1 shows up in Active Directory users and computers </p>
+<p> Login to Dc-1 (Domain Controller) to verify Client-1 shows up in Active Directory users and computers </p>
 <img src="https://i.imgur.com/gqLFHS5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
-<p> create a new Organizational unit and name it _CLIENTS then drag over the Client-group over to the new _CLIENTS folder to keep it organzied  </p>
+<p> create a new organizational unit and name it _CLIENTS then drag over the Client-group over to the new _CLIENTS folder to keep it organzied  </p>
 
 <img src="https://i.imgur.com/6PwizCY.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 <img src="https://i.imgur.com/eFzG8LY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
-<p> Setup Remote Desktop for non-administrative users on Client-1 by loggin back into client-1 and using the admin user name  </p>
+<p> Setup remote desktop for non-administrative users on Client-1 by loggin back into client-1 and using the admin user name  </p>
 
 <img src="https://i.imgur.com/Q8EWr6b.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
@@ -184,22 +184,22 @@ This will open the policy management console.
 
  <img src="https://i.imgur.com/i0mNlTW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
-<p> Create or edit a group Policy Object
+<p> Create or edit a group policy object
 
-1. navigate to the group policy objects section.
-2. right-click Group Policy Object and select new to create a new GPO, or right click an existing GPO and edit to modify it.
+1. Navigate to the group policy objects section.
+2. Right-Click Group Policy Object and select new to create a new GPO, or right click an existing GPO and edit to modify it.
    Give the new GPO a descriptive name (Account Lockout Policy) we will be editing the current policy.
 </p>
  <img src="https://i.imgur.com/arYIqn8.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
 <p> Navigate to the account lockout policy settings 
-  1. in the group policy management editor, expand the following 
+  1. Inside the group policy management editor, expand the following 
     Computer configuration > Policies > Windows Settings > Security Settings > Account Policies 
 </p>
  <img src="https://i.imgur.com/xQlU1Lz.png " height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
 
-<p> Configure Account Lockout Policy Settings 
+<p> Configure account lockout policy settings 
   1. Change the Account lookout duration
   2. update the group policy ( wait for it to automatically update or on the client-1 machine you can run gpupdate/force on Command Prompt to manually update.
 </p>
